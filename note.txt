@@ -1,0 +1,24 @@
+-src
+    - components: chứa dump components (những components tái sử dụng cho các compenents khác - nhận vào props và render ra giao diện, ít sử lý logic (gọi API,router)) Ex: Button, Card 
+    - pages: Chứa các components cấu thành một page và có các xử lý logic bên trong những components này 
+    - hooks: chứa các custom hook, đặt tên(vd:useRequest, useACB)
+    - services: nơi setup API 
+    - styles: nơi đặt các file css/scss 
+        + Sử dụng scss trong react: npm i -D sass
+        trong file index.js trong thư mục styles
+        import 'bootstrap/dist/css/bootstrap.min.css'
+        import './index.scss'; 
+    - utils: chứa các common function để tái sử dụng trong project
+    - layouts: chứa các components layouts 
+    - auth: chứa các components và các hàm xử lý liên quan đến authentication
+    * Có redux 
+        - actions: Chứa action của redux 
+        - constants: Chứa constants của project và type của redux 
+        - reducers: Chứa reducers của redux
+
+setup project
+    lib: axios redux react-redux redux-thunk react-router-dom reactstrap bootstrap
+    
+create-react-app.dev web về react
+
+
